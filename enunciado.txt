@@ -1,0 +1,10 @@
+Apartado 1.
+
+Parsear coches.json para mapear los datos en la base de datos COCHES.
+El sql proporcionado tiene la estructura y los datos para que veas a que corresponde cada campo.
+Los pasos que tienen que hacerse en este método insertarDatos() son los siguientes:
+
+    * vaciar las tablas.
+    * leer el json para formar los objetos con sus datos.
+    * guardar los datos.
+

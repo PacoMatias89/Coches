@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/COCHES</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">Kombolo$$1989</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <property name="hibernate.types.print.banner">false</property>
+        <property name="hibernate.types.dir">https://github.com/vladmihalcea/hibernate-types</property>
+        <property name="hibernate.types.defaultPackage">com.vladmihalcea.hibernate.type.util</property>
+
+        <mapping class="org.example.model.Supplier"/>
+        <mapping class="org.example.model.Car"/>
+        <mapping class="org.example.model.DropoffDetail"/>
+        <mapping class="org.example.model.ExtraDetail"/>
+        <mapping class="org.example.model.OpeningHour"/>
+        <mapping class="org.example.model.PickupDetail"/>
+        <mapping class="org.example.model.SupplierExtra"/>
+        <mapping class="org.example.model.ExtraDetail"/>
+    </session-factory>
+</hibernate-configuration>
